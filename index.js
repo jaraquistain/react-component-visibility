@@ -47,7 +47,7 @@
       // lets determine element's position relative to viewport center (regardless of visibility)
         topHalf = (h / 2) > elVCenter,
         oneThird = (h / 3) > elVCenter,
-        twoThird = (h / 3) <= elVCenter < (h * 2 / 3),
+        twoThird = (h / 3) <= elVCenter && elVCenter < (h * 2 / 3),
         threeThird = elVCenter >= (h * 2 / 3),
         leftHalf = (w / 2) > elHCenter,
         visibilityChanged, vPositionChanged, hPositionChanged;
